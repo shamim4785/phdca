@@ -114,19 +114,29 @@
         <div class="contact-card">
             <h2>Initiate an Institutional Project Evaluation</h2>
             <p>Connect to secure precise methodologies, data curation strategies, or custom statistical infrastructure support.</p>
-            <form id="consultationForm" onsubmit="handleFormSubmit(event)">
+            
+            <!-- Modified Form Section to utilize Web3Forms securely -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+                
+                <!-- REQUIRED: Replace value text below with the Access Key generated from your dashboard screen -->
+                <input type="hidden" name="access_key" value="47a38597-a29b-4939-b96a-5bef953d064d">
+                
+                <!-- OPTIONAL: Forces page to redirect cleanly back to your site after success window -->
+                <input type="hidden" name="redirect" value="https://shamim4785.github.io/phdca/">
+
                 <div class="form-group">
-                    <input type="text" id="clientName" placeholder="Organization / Investigator Name" required>
+                    <input type="text" name="Organization_or_Investigator" placeholder="Organization / Investigator Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="clientEmail" placeholder="Institutional Email Address" required>
+                    <input type="email" name="Email_Address" placeholder="Institutional Email Address" required>
                 </div>
                 <div class="form-group">
-                    <textarea id="projectScope" rows="5" placeholder="Brief outline of dataset scale, study type, or technical constraints..." required></textarea>
+                    <textarea name="Project_Scope" rows="5" placeholder="Brief outline of dataset scale, study type, or technical constraints..." required></textarea>
                 </div>
+                
                 <button type="submit" class="btn-submit">Submit Consultation Query</button>
             </form>
-            <div id="formSuccess" class="success-msg">Thank you. Your technical requirements have been received.</div>
+            
         </div>
     </section>
 
