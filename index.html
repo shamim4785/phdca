@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Shamim Aktar | Public Health Data Consultant & Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Professional Public Health Statistician & Data Consultant specializing in epidemiological study designs, advanced biostatistics, and predictive modeling.">
+    <meta name="keywords" content="Public Health Consultant, Biostatistician Dhaka, R programming health data, Epidemiological analysis, Stata expert Bangladesh">
+    <meta name="author" content="Md. Shamim Aktar">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">Shamim <span>DataInsight</span></a>
+            <ul class="nav-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Methodologies</a></li>
+                <li><a href="#projects">Case Studies</a></li>
+                <li><a href="#contact" class="nav-cta">Hire Consultant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="consultant-hero">
+        <div class="hero-overlay">
+            <div class="hero-core">
+                <span class="badge">Epidemiology & Biostatistics</span>
+                <h1>Turning Complex Health Sourced Data Into Actionable Policy</h1>
+                <p>Providing rigorous statistical architecture, advanced modeling, and clean documentation for international health frameworks, clinical trials, and NGO impact assessments.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">Request Consultation</a>
+                    <a href="#projects" class="btn-secondary">View Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">Consulting Frameworks</h2>
+        <p class="section-subtitle">High-fidelity data infrastructure tailored for medical research and global health entities.</p>
+        
+        <div class="grid-3">
+            <div class="service-box">
+                <div class="icon">📊</div>
+                <h3>Biostatistical Analysis</h3>
+                <p>Advanced multivariable regression modeling, survival analysis, and parametric/non-parametric inferential computations optimized for clinical and observational tracking data.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon">📐</div>
+                <h3>Study Design Architecture</h3>
+                <p>Protocol development, sample size estimation, and rigorous power analysis for Cluster Randomized Controlled Trials (cRCTs), case-control setups, and longitudinal cohorts.</p>
+            </div>
+            <div class="service-box">
+                <div class="icon">🧬</div>
+                <h3>Predictive MLOps</h3>
+                <p>Deploying robust, transparent health risk indicators utilizing feature selection pipelines (PCA) combined with highly interpretative SHAP validation models.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Methodologies & Stack -->
+    <section id="expertise" class="section dark-bg">
+        <h2 class="section-title text-white">Technical Core Competency</h2>
+        <div class="tabs-container">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="switchTab(event, 'stack')">Computational Stack</button>
+                <button class="tab-btn" onclick="switchTab(event, 'methods')">Epidemiological Matrix</button>
+            </div>
+            
+            <div id="stack" class="tab-content active">
+                <div class="skills-flex">
+                    <span class="pill">R (Tidyverse, ggplot2, lme4)</span>
+                    <span class="pill">Stata (Mata, Survival Suite)</span>
+                    <span class="pill">Python (Scikit-Learn, SHAP, MLflow)</span>
+                    <span class="pill">SQL / Relational DB Architectures</span>
+                </div>
+            </div>
+            
+            <div id="methods" class="tab-content">
+                <div class="skills-flex">
+                    <span class="pill">Multivariable Logistic Regression</span>
+                    <span class="pill">Cluster Effect Corrections</span>
+                    <span class="pill">Confounder Stratification</span>
+                    <span class="pill">Anthropometric Data Pipelines</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Case Studies Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Active Field Deliverables</h2>
+        <div class="grid-2">
+            <div class="project-card">
+                <h3>Maternal & Child Health Trial Dashboard</h3>
+                <p>Engineered comprehensive, real-time trial visualizations and cluster data tracks for large-scale field assistant deployments using optimized reproducible scripting frameworks.</p>
+                <span class="tag">Clinical Trial Architecture</span>
+            </div>
+            <div class="project-card">
+                <h3>Predictive Health Risk Modeling System</h3>
+                <p>Constructed an automated exploratory framework utilizing Principal Component Analysis (PCA) to structure high-dimension health metrics into clear public policy recommendations.</p>
+                <span class="tag">Data Science & Analytics</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Contact Form -->
+    <section id="contact" class="section light-bg">
+        <div class="contact-card">
+            <h2>Initiate an Institutional Project Evaluation</h2>
+            <p>Connect to secure precise methodologies, data curation strategies, or custom statistical infrastructure support.</p>
+            <form id="consultationForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" id="clientName" placeholder="Organization / Investigator Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="clientEmail" placeholder="Institutional Email Address" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="projectScope" rows="5" placeholder="Brief outline of dataset scale, study type, or technical constraints..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit Consultation Query</button>
+            </form>
+            <div id="formSuccess" class="success-msg">Thank you. Your technical requirements have been received.</div>
+        </div>
+    </section>
+
+    <footer class="corporate-footer">
+        <p>&copy; 2026 Md. Shamim Aktar. Public Health Statistician & Consultant Analyst. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
